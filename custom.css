@@ -1,0 +1,59 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.square {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.cell {
+	background-color: #F8F8AB;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	float: left;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.btn-sign {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: white;
+	color: black;
+	outline: 0;
+	border: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+.btn:visited {
+	background-color: black;
+	color: white;
+	outline: 0;
+	border: none;
+}
+
+#new-game {
+	border-radius: 50%;
+}
+
+.fa.fa-times.sign {
+	margin: auto;
+	font-size: 100px;
+}
+
+.fa.fa-circle-o.sign {
+	margin: auto;
+	font-size: 100px;
+}
+
+.fa.fa-refresh {
+	font-size: 50px;
+}

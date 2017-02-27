@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':8080/livereload.js?snipver=2" async></' + 'script>')
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="source.js"></script>
+    <title>tictactoe</title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="choiceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h4><i class="fa fa-times"></i> or <i class="fa fa-circle-o"></i>?</h4></div>
+                    <div class="text-center">
+                        <button type="button" id="X" class="btn btn-default btn-sign" data-dismiss="modal"><i class="fa fa-times sign"></i></button>
+                        <button type="button" id="O" class="btn btn-default btn-sign" data-dismiss="modal"><i class="fa fa-circle-o sign"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="min-height: 95%;">
+        <div style="margin-top: 5%"></div>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-2 text-left">
+                <h3><b>You <span id="player-score">0</span></b></h3></div>
+            <div class="col-xs-2 text-right">
+                <h3><b>Computer <span id="computer-score">0</span></b></h3></div>
+            <div class="col-xs-4"></div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="square">
+                <div id="0" class="cell">&nbsp</div>
+                <div id="1" class="cell">&nbsp</div>
+                <div id="2" class="cell">&nbsp</div>
+                <div id="3" class="cell">&nbsp</div>
+                <div id="4" class="cell">&nbsp</div>
+                <div id="5" class="cell">&nbsp</div>
+                <div id="6" class="cell">&nbsp</div>
+                <div id="7" class="cell">&nbsp</div>
+                <div id="8" class="cell">&nbsp</div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h3><b id="banner"></b></h3></div>
+    </div>
+    <div class="text-center">
+        <button type="button" id="new-game" class="btn btn-default btn-sign" data-dismiss="modal"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+    </div>
+
+    <br>
+
+    <footer class=" footer text-center">
+    <div class="container">
+        <p>Coded up by <a class="credit" href="https://www.freecodecamp.com/subhan95" target="_blank">Subhan95</a>
+            <br><a class="credit" href="https://www.mohdsubhan.me/" target="_blank">Visit my website</a>
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>
